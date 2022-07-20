@@ -52,3 +52,10 @@ function redirectToRoomName(name){
     localStorage.setItem("room_name" , name);
     window.location = "kwitter_page.html"
 }
+
+function logout(){
+    localStorage.removeItem("room_name");
+    localStorage.removeItem("user_name");
+    window.location = "kwitter.html";
+
+}
